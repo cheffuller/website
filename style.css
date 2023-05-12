@@ -8,9 +8,15 @@
 }
 
 body {
+  background-color: grey;
+}
+
+main {
   background-image: url(img/brandonDevilsRiver.JPG);
   background-size: cover;
   background-repeat: no-repeat;
+  display: flex;
+  height: 700px;
 }
 
 li {
@@ -24,7 +30,7 @@ a {
 }
 
 .navbar {
-  min-height: 70px;
+  min-height: 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -47,7 +53,7 @@ a {
 }
 
 .nav-link:hover {
-  color: grey;
+  color: lightgrey;
 }
 
 .hamburger {
@@ -107,20 +113,17 @@ header {
   display: flex;
 }
 
-/* nav { 
-    margin: auto 0 auto auto;
-} */
-
-main {
-  display: flex;
+nav {
+  margin: auto 0 auto auto;
 }
 
 section {
+  width: 275px;
+  margin: 100px 100px auto auto;
   font-family: "Dancing Script", cursive;
   font-size: 24px;
-  width: 275px;
-  margin: 100px 30% auto auto;
   text-align: center;
+  color: white;
 }
 
 article {
@@ -130,4 +133,13 @@ article {
 h1 {
   font-family: "Rajdhani", sans-serif;
   margin: auto;
+}
+
+footer {
+  width: 100%;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 10px;
+  color: white;
+  text-align: right;
+  padding-right: 20px;
 }
