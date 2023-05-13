@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat&family=Ubuntu&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
 * {
   padding: 0;
   margin: 0;
@@ -11,7 +11,7 @@ body {
   background-color: grey;
 }
 
-main {
+#indexMain {
   background-image: url(img/brandonDevilsRiver.JPG);
   background-size: cover;
   background-repeat: no-repeat;
@@ -91,7 +91,7 @@ a {
   .nav-menu {
     position: fixed;
     left: -100%;
-    top: 70px;
+    top: 40px;
     gap: 0;
     flex-direction: column;
     background-color: #262626;
@@ -117,10 +117,10 @@ nav {
   margin: auto 0 auto auto;
 }
 
-section {
+#indexIntro {
   width: 275px;
   margin: 100px 100px auto auto;
-  font-family: "Dancing Script", cursive;
+  font-family: "Architects Daughter", cursive;
   font-size: 24px;
   text-align: center;
   color: white;
@@ -142,4 +142,32 @@ footer {
   color: white;
   text-align: right;
   padding-right: 20px;
+}
+
+
+#aboutMain {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "Architects Daughter", cursive;
+  background-color: white;
+  font-size: 24px;
+}
+
+section.aboutSection {
+  display: flex;
+  width: 400px;
+  height: 450px;
+  margin: auto;
+  text-align: center;
+}
+
+p {
+  margin: auto;
+}
+
+.aboutImages {
+  width: 100%;
+  margin: 50px;
+  border-radius: 5px;
 }
