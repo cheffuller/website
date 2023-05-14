@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat&family=Ubuntu&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
 
 * {
   padding: 0;
@@ -141,6 +141,7 @@ h1 {
 
 footer {
   width: 100%;
+  background-color: grey;
   font-family: "Ubuntu", sans-serif;
   font-size: 10px;
   color: white;
@@ -181,7 +182,7 @@ p {
 
 #resumeHTML {
   max-width: 1000px;
-  font-family: 'Rajdhani', sans-serif;
+  font-family: "Rajdhani", sans-serif;
   background-color: white;
 }
 
@@ -301,50 +302,120 @@ a.resume-link {
 
 /* Repositions the headshot image for responsiveness */
 @media (max-width: 725px) {
-
   #headshot {
-      position: static;
-      display: block;
-      margin: 50px auto 0px auto;
+    position: static;
+    display: block;
+    margin: 50px auto 0px auto;
   }
 }
 
 /* Changes to a single column grid for responsiveness */
 @media (max-width: 576px) {
-
   span.circleIcon {
-      display: none;
+    display: none;
   }
 
   #resumeGrid {
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr;
-      margin: 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    margin: 20px;
   }
 
   #contact,
   #profile,
   #skills,
   #experience,
-  #education
-   {  text-align: center;
-      border: none;
-      padding: 20px 0px;
+  #education {
+    text-align: center;
+    border: none;
+    padding: 20px 0px;
   }
 
   ul.resume-ul {
-      display: table;
-      margin: 0 auto;
+    display: table;
+    margin: 0 auto;
   }
 }
 
 @media (max-width: 547px) {
-
   #resumeHeader::before {
-      height: 175px;
+    height: 175px;
   }
 }
 
-footer {
-  background-color: grey;
+/* css for the contact html page */
+
+#contact-body,
+.contact-input,
+#contact-comments,
+#contact-h1 {
+  font-family: "Wix Madefor Display", sans-serif;
+}
+
+#contact-main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#contact-head {
+  height: 200px;
+  background-color: lightgray;
+  display: flex;
+}
+
+#contact-h1 {
+  text-align: center;
+  color: white;
+  
+}
+
+.contact-section {
+  margin: 0 auto;
+  width: 350px;
+}
+
+.contact-div {
+  margin: 20px;
+}
+
+.inside-contact-div {
+  margin: 10px 20px;
+}
+
+#contact-comments {
+  height: 150px;
+  font-size: 16px;
+  resize: none;
+}
+
+#contact-name,
+#contact-email,
+#contact-comments,
+#birthday {
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  margin-top: 10px;
+}
+
+#contact-name,
+#contact-email {
+  width: 75%;
+}
+
+#contact-comments {
+  width: 100%;
+}
+
+#contact-button-section {
+  height: 100px;
+  background-color: lightgray;
+  text-align: center;
+}
+
+.contact-buttons {
+  padding: 5px;
+  margin: 35px;
 }

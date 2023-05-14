@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Contact Me</title>
+  </head>
+
+  <body id="contact-body">
+    <header class="headerMain">
+      <nav class="navbar">
+        <a href="index.html" class="nav-branding">BF</a>
+
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="resume.html" class="nav-link">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a href="aboutPage.html" class="nav-link">About Me</a>
+          </li>
+          <!-- <a class="nav" href="https://medium.com/me/stories/public">My Blog</a> -->
+          <li class="nav-item">
+            <a href="#" class="nav-link">My Blog</a>
+          </li>
+          <li class="nav-item">
+            <a href="contactPage.html" class="nav-link">Contact Me</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+    <section id="contact-head">
+      <h1 id="contact-h1">I'm here, let's start a conversation...</h1>
+    </section>
+    <form action="results.html" method="GET" enctype="multipart/form-data">
+      <main id="contact-main">
+        <section class="contact-section">
+          <div class="contact-div">
+            <label for="name">your name</label><br />
+            <input
+              type="text"
+              name="name"
+              id="contact-name"
+              class="contact-input"
+            />
+          </div>
+          <div class="contact-div">
+            <label for="email">your email</label><br />
+            <input
+              type="email"
+              name="email"
+              id="contact-email"
+              class="contact-input"
+            />
+          </div>
+          <div class="contact-div">
+            <label for="comments">what would you like to talk about?</label
+            ><br />
+            <textarea name="comments" id="contact-comments"> </textarea>
+          </div>
+        </section>
+
+        <section class="contact-section">
+          <div class="contact-div">
+            how did you hear about me?
+            <div class="inside-contact-div">
+              <input
+                type="checkbox"
+                name="classmate"
+                id="classmate"
+                class="contact-input"
+              />
+              <label for="classmate">classmate</label>
+            </div>
+            <div class="inside-contact-div">
+              <input
+                type="checkbox"
+                name="resumeSubmission"
+                id="resumeSubmission"
+                class="contact-input"
+              />
+              <label for="resumeSubmission">resume submission</label>
+            </div>
+            <div class="inside-contact-div">
+              <input
+                type="checkbox"
+                name="linkedIn"
+                id="linkedIn"
+                class="contact-input"
+              />
+              <label for="linkedIn">LinkedIn</label>
+            </div>
+            <div class="inside-contact-div">
+              <input
+                type="checkbox"
+                name="acaRec"
+                id="acaRec"
+                class="contact-input"
+              />
+              <label for="acaRec">ACA recommendation</label>
+            </div>
+          </div>
+
+          <div class="contact-div">
+            would you like me to contact you back?
+            <div class="inside-contact-div">
+              <input
+                type="radio"
+                name="yesContact"
+                id="yesContact"
+                value="yesContact"
+                class="contact-input"
+              />
+              <label for="yesContact">yes</label>
+            </div>
+            <div class="inside-contact-div">
+              <input
+                type="radio"
+                name="noContact"
+                id="noContact"
+                value="noContact"
+                class="contact-input"
+              />
+              <label for="noContact">no</label>
+            </div>
+          </div>
+
+          <div class="contact-div">
+            <label for="birthday">would you like me to send you birthday wishes?</label><br />
+            <input
+              type="date"
+              name="birthday"
+              id="birthday"
+              max="today"
+              class="contact-input"
+            />
+          </div>
+        </section>
+      </main>
+      <section id="contact-button-section">
+        <button class="contact-buttons" type="reset">Reset</button>
+        <button class="contact-buttons" type="submit">Submit</button>
+      </section>
+    </form>
+    <footer>© Brandon Fuller 2023</footer>
+    <script src="script.js"></script>
+  </body>
+</html>
