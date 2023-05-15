@@ -91,6 +91,16 @@ a {
     transform: translateY(-8px) rotate(-45deg);
   }
 
+  .navbar {
+    position: fixed;
+    background-color: grey;
+    z-index: 1;
+  }
+
+  .headerMain {
+    margin-bottom: 40px;
+  }
+
   .nav-menu {
     position: fixed;
     left: -100%;
@@ -101,6 +111,8 @@ a {
     width: 100%;
     text-align: center;
     transition: 0.3s;
+    z-index: 1;
+    opacity: 0.8;
   }
 
   .nav-item {
@@ -178,12 +190,16 @@ p {
   border-radius: 5px;
 }
 
-/* This section of css is for the resume page */
+/* css for the resume html page */
 
-#resumeHTML {
-  max-width: 1000px;
+#resume-html {
   font-family: "Rajdhani", sans-serif;
   background-color: white;
+  display: flex;
+}
+
+#resume-body {
+  margin: 0 auto;
 }
 
 /* Places a grey background for the header banner */
@@ -202,7 +218,6 @@ p {
 #resumeHeader {
   width: 100%;
   position: relative;
-  /* margin-top: 30px; */
 }
 
 #headarticle {
@@ -223,7 +238,8 @@ p {
   font-size: 42px;
   font-weight: 400;
   letter-spacing: 15px;
-  padding: 35px 0px 0px 38px;
+  line-height: 40px;
+  padding: 25px 38px 0px 38px;
 }
 
 #resumeH3 {
@@ -301,7 +317,7 @@ a.resume-link {
 }
 
 /* Repositions the headshot image for responsiveness */
-@media (max-width: 725px) {
+@media (max-width: 730px) {
   #headshot {
     position: static;
     display: block;
@@ -337,7 +353,7 @@ a.resume-link {
   }
 }
 
-@media (max-width: 547px) {
+@media (max-width: 583px) {
   #resumeHeader::before {
     height: 175px;
   }
@@ -347,9 +363,13 @@ a.resume-link {
 
 #contact-body,
 .contact-input,
-#contact-comments,
-#contact-h1 {
+#contact-comments {
   font-family: "Wix Madefor Display", sans-serif;
+}
+
+#contact-h1 {
+  font-family: "Architects Daughter", cursive;
+  font-size: 36px;
 }
 
 #contact-main {
