@@ -20,14 +20,28 @@
   height: 700px;
 }
 
-li.nav-item {
-  list-style: none;
+#indexIntro {
+  width: 275px;
+  margin: 100px 100px auto auto;
+  font-family: "Architects Daughter", cursive;
+  font-size: 24px;
+  text-align: center;
+  color: white;
 }
 
-a {
-  font-family: "Ubuntu", sans-serif;
-  color: white;
-  text-decoration: none;
+article {
+  margin: 0 20px;
+}
+
+#index-h1 {
+  font-family: "Rajdhani", sans-serif;
+  margin: auto;
+}
+
+/* css for navigation bar and hamburger transition */
+
+li.nav-item {
+  list-style: none;
 }
 
 .navbar {
@@ -46,17 +60,22 @@ a {
   gap: 60px;
 }
 
+.nav-branding,
+.nav-link {
+  font-family: "Ubuntu", sans-serif;
+  color: white;
+  text-decoration: none;
+  transition: 0.7s ease;
+}
+
 .nav-branding {
   font-size: 2rem;
   text-align: left;
 }
 
-.nav-link {
-  transition: 0.7s ease;
-}
-
+.nav-branding:hover,
 .nav-link:hover {
-  color: lightgrey;
+  color: darkgray;
 }
 
 .hamburger {
@@ -73,6 +92,8 @@ a {
   transition: all 0.3s ease-in-out;
   background-color: white;
 }
+
+/* nav bar transition to hamburger menu */
 
 @media (max-width: 768px) {
   .hamburger {
@@ -95,10 +116,6 @@ a {
     position: fixed;
     background-color: grey;
     z-index: 1;
-  }
-
-  .headerMain {
-    margin-bottom: 40px;
   }
 
   .nav-menu {
@@ -133,24 +150,6 @@ a {
   margin: auto 0 auto auto;
 }
 
-#indexIntro {
-  width: 275px;
-  margin: 100px 100px auto auto;
-  font-family: "Architects Daughter", cursive;
-  font-size: 24px;
-  text-align: center;
-  color: white;
-}
-
-article {
-  margin: 0 20px;
-}
-
-h1 {
-  font-family: "Rajdhani", sans-serif;
-  margin: auto;
-}
-
 footer {
   width: 100%;
   background-color: grey;
@@ -163,8 +162,8 @@ footer {
 
 /* css for the about html page */
 
-#aboutMain {
-  margin: auto;
+#about-main {
+  margin: 40px;
   display: flex;
   flex-wrap: wrap;
   font-family: "Architects Daughter", cursive;
@@ -172,22 +171,70 @@ footer {
   font-size: 24px;
 }
 
-section.aboutSection {
+.about-section,
+.about-p,
+.about-images {
+  margin: auto;
+}
+
+.about-section {
   display: flex;
   width: 400px;
   height: 450px;
-  margin: auto;
   text-align: center;
 }
 
-p {
-  margin: auto;
+.about-images {
+  width: 100%;
+  padding: 50px;
 }
 
-.aboutImages {
-  width: 100%;
-  margin: 50px;
-  border-radius: 5px;
+/* re-ordering the sections of the About Me display grid on resizing to a single column */
+
+@media (max-width: 879px) {
+  #about-section-one {
+    order: 2;
+  }
+  #about-section-two {
+    order: 1;
+    margin-top: 40px;
+  }
+  #about-section-three {
+    order: 3;
+  }
+  #about-section-four {
+    order: 4;
+  }
+  #about-section-five {
+    order: 6;
+  }
+  #about-section-six {
+    order: 5;
+  }
+}
+
+/* re-ordering the sections of the About Me display grid on resizing to three columns */
+
+@media (min-width: 1280px) {
+  #about-section-one {
+    order: 2;
+  }
+  #about-section-two {
+    order: 1;
+    /* margin-top: 40px; */
+  }
+  #about-section-three {
+    order: 3;
+  }
+  #about-section-four {
+    order: 4;
+  }
+  #about-section-five {
+    order: 6;
+  }
+  #about-section-six {
+    order: 5;
+  }
 }
 
 /* css for the resume html page */
@@ -353,6 +400,8 @@ a.resume-link {
   }
 }
 
+/* increases size of gray banner for resume header */
+
 @media (max-width: 583px) {
   #resumeHeader::before {
     height: 175px;
@@ -387,7 +436,6 @@ a.resume-link {
 #contact-h1 {
   text-align: center;
   color: white;
-  
 }
 
 .contact-section {
