@@ -139,6 +139,11 @@ li.nav-item {
   .nav-menu.active {
     left: 0;
   }
+
+  #resumeHeader::before,
+  #resumeHeader {
+    padding-top: 40px;
+  }
 }
 
 .headerMain {
@@ -163,7 +168,7 @@ footer {
 /* css for the about html page */
 
 #about-main {
-  margin: 40px;
+  padding: 40px;
   display: flex;
   flex-wrap: wrap;
   font-family: "Architects Daughter", cursive;
@@ -364,7 +369,7 @@ a.resume-link {
 }
 
 /* Repositions the headshot image for responsiveness */
-@media (max-width: 730px) {
+@media (max-width: 770px) {
   #headshot {
     position: static;
     display: block;
@@ -419,6 +424,7 @@ a.resume-link {
 #contact-h1 {
   font-family: "Architects Daughter", cursive;
   font-size: 36px;
+  margin: auto;
 }
 
 #contact-main {
