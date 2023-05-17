@@ -16,13 +16,14 @@
   background-image: url(img/brandonDevilsRiver.JPG);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   display: flex;
   height: 700px;
 }
 
 #indexIntro {
   width: 275px;
-  margin: 100px 100px auto auto;
+  margin: 100px 30% auto auto;
   font-family: "Architects Daughter", cursive;
   font-size: 24px;
   text-align: center;
@@ -138,6 +139,11 @@ li.nav-item {
 
   .nav-menu.active {
     left: 0;
+  }
+
+  #indexIntro {
+    width: 275px;
+    margin: 100px auto;
   }
 
   #resumeHeader::before,
