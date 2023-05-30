@@ -182,20 +182,18 @@ footer {
   font-size: 24px;
 }
 
-.about-section,
-.about-p,
-.about-images {
+#about-main section, #about-main p, #about-main img {
   margin: auto;
 }
 
-.about-section {
+#about-main section {
   display: flex;
   width: 400px;
   height: 450px;
   text-align: center;
 }
 
-.about-images {
+#about-main img {
   width: 100%;
   padding: 50px;
 }
@@ -203,47 +201,30 @@ footer {
 /* re-ordering the sections of the About Me display grid on resizing to a single column */
 
 @media (max-width: 879px) {
-  #about-section-one {
-    order: 2;
-  }
-  #about-section-two {
-    order: 1;
+  #about-main section:nth-child(2) {
     margin-top: 40px;
-  }
-  #about-section-three {
-    order: 3;
-  }
-  #about-section-four {
-    order: 4;
-  }
-  #about-section-five {
-    order: 6;
-  }
-  #about-section-six {
-    order: 5;
   }
 }
 
 /* re-ordering the sections of the About Me display grid on resizing to three columns */
 
-@media (min-width: 1280px) {
-  #about-section-one {
+@media (min-width: 1280px) or (max-width: 879px) {
+  #about-main section:nth-child(1) {
     order: 2;
   }
-  #about-section-two {
+  #about-main section:nth-child(2) {
     order: 1;
-    /* margin-top: 40px; */
   }
-  #about-section-three {
+  #about-main section:nth-child(3) {
     order: 3;
   }
-  #about-section-four {
+  #about-main section:nth-child(4) {
     order: 4;
   }
-  #about-section-five {
+  #about-main section:nth-child(5) {
     order: 6;
   }
-  #about-section-six {
+  #about-main section:nth-child(6) {
     order: 5;
   }
 }
