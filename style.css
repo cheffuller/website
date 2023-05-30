@@ -239,6 +239,7 @@ footer {
 
 #resume-body {
   margin: 0 auto;
+  max-width: 1000px;
 }
 
 /* Places a grey background for the header banner */
@@ -284,7 +285,7 @@ footer {
 #resumeH3 {
   font-weight: 600;
   letter-spacing: 10px;
-  padding-left: 40px;
+  padding: 0 40px;
 }
 
 #resumeH2 {
@@ -357,7 +358,7 @@ a {
 }
 
 /* Repositions the headshot image for responsiveness */
-@media (max-width: 770px) {
+@media (max-width: 900px) {
   #headshot {
     position: static;
     display: block;
@@ -395,9 +396,9 @@ a {
 
 /* increases size of gray banner for resume header */
 
-@media (max-width: 583px) {
+@media (max-width: 600px) {
   #resumeHeader::before {
-    height: 175px;
+    height: 200px;
   }
 }
 
