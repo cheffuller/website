@@ -330,7 +330,7 @@ span.circleIcon {
   border: 1px solid grey;
   position: absolute;
   bottom: -6px;
-  right: -6px;
+  right: -5.5px;
   z-index: 1;
 }
 
@@ -338,7 +338,7 @@ ul {
   padding: 0px 20px;
 }
 
-a.resume-link {
+a {
   font-family: "Rajdhani", sans-serif;
   color: black;
 }
@@ -348,7 +348,7 @@ a.resume-link {
   width: 90%;
   display: grid;
   grid-template-columns: 40% 60%;
-  grid-template-rows: 33.3% 33.3% 33.4%;
+  grid-template-rows: 20% 40% 40%;
   margin: 80px 40px 20px 40px;
 }
 
@@ -359,7 +359,6 @@ a.resume-link {
 
 #profile,
 #experience {
-  border-left: 1px solid grey;
   padding-left: 30px;
 }
 
@@ -370,6 +369,8 @@ a.resume-link {
   padding-top: 30px;
 }
 
+#contact,
+#skills,
 #education {
   border-right: 1px solid grey;
 }
