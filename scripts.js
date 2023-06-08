@@ -8,17 +8,15 @@
     );
 
   copyrightInfo.replaceChild(newTextNode, copyrightInfo.childNodes[0]);
-
-  console.log("Hello");
 })();
 
 // Scripts for contact page reults
-const placeForResults = document.getElementById("results");
+// const placeForResults = document.getElementById("results");
 
-new URLSearchParams(window.location.search).forEach((value, name) => {
-  placeForResults.append(`${name} : ${value}`);
-  placeForResults.append(document.createElement("br"));
-});
+// new URLSearchParams(window.location.search).forEach((value, name) => {
+//   placeForResults.append(`${name} : ${value}`);
+//   placeForResults.append(document.createElement("br"));
+// });
 
 // Scripts for nav menu
 const hamburger = document.querySelector(".hamburger");
@@ -35,3 +33,36 @@ document.querySelectorAll(".nav-link").forEach((n) =>
     navMenu.classList.remove("active");
   })
 );
+
+const sendForm = () => {
+  const eeemale = ("m" +
+  "a" +
+  "i" +
+  "l" +
+  "t" +
+  "o" +
+  ":" +
+  "p" +
+  "r" +
+  "i" +
+  "c" +
+  "e" +
+  "f" +
+  "u" +
+  "l" +
+  "l" +
+  "e" +
+  "r" +
+  "@" +
+  "g" +
+  "m" +
+  "a" +
+  "i" +
+  "l" +
+  "." +
+  "c" +
+  "o" +
+  "m");
+
+  document.getElementById("contact-form").setAttribute(action, eeemale);
+}

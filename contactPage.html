@@ -37,11 +37,11 @@
     <section class="contact-head">
       <h1 class="contact-h1">I'm here, let's start a conversation...</h1>
     </section>
-    <form action="results.html" method="GET" enctype="multipart/form-data">
+    <form id="contact-form" method="post" enctype="text/plain">
       <main class="contact-main">
         <section class="contact-section">
           <div class="contact-div">
-            <label for="name">your name</label><br />
+            <label for="contact-name">your name</label><br />
             <input
               type="text"
               name="name"
@@ -50,7 +50,7 @@
             />
           </div>
           <div class="contact-div">
-            <label for="email">your email</label><br />
+            <label for="contact-email">your email</label><br />
             <input
               type="email"
               name="email"
@@ -59,7 +59,7 @@
             />
           </div>
           <div class="contact-div">
-            <label for="comments">what would you like to talk about?</label
+            <label for="contact-comments">what would you like to talk about?</label
             ><br />
             <textarea name="comments" id="contact-comments"> </textarea>
           </div>
@@ -133,7 +133,7 @@
       </main>
       <section class="contact-button-section">
         <button class="contact-buttons" type="reset">Reset</button>
-        <button class="contact-buttons" type="submit">Submit</button>
+        <button class="contact-buttons" type="submit" onclick="sendform()" value="Send">Submit</button>
       </section>
     </form>
     <footer class="copyright-info">&copy; Brandon Fuller</footer>
