@@ -8,7 +8,8 @@
   box-sizing: border-box;
 }
 
-.bodyMain {
+.bodyMain,
+.contact-body {
   background-color: grey;
 }
 
@@ -231,7 +232,7 @@ footer {
 
 /* css for the resume html page */
 
-#resume-html {
+.resume-html {
   font-family: "Rajdhani", sans-serif;
   background-color: white;
   display: flex;
@@ -297,6 +298,10 @@ section.resumeSection {
   line-height: 1.75em;
 }
 
+.autoscript {
+  display: inline;
+}
+
 /* icons in the contact section */
 i {
   margin-right: 10px;
@@ -358,7 +363,7 @@ a {
 
 /* Repositions the headshot image for responsiveness */
 @media (max-width: 900px) {
-  #headshot {
+  .resume-headshot {
     position: static;
     display: block;
     margin: 50px auto 0px auto;
@@ -403,33 +408,31 @@ a {
 
 /* css for the contact html page */
 
-#contact-body,
+.contact-body,
 .contact-input,
 #contact-comments {
   font-family: "Wix Madefor Display", sans-serif;
 }
 
-#contact-h1 {
+.contact-h1 {
   font-family: "Architects Daughter", cursive;
   font-size: 36px;
   margin: auto;
+  text-align: center;
+  color: white;
 }
 
-#contact-main {
+.contact-main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  background-color: white;
 }
 
-#contact-head {
+.contact-head {
   height: 200px;
   background-color: lightgray;
   display: flex;
-}
-
-#contact-h1 {
-  text-align: center;
-  color: white;
 }
 
 .contact-section {
@@ -449,6 +452,7 @@ a {
   height: 150px;
   font-size: 16px;
   resize: none;
+  width: 100%;
 }
 
 #contact-name,
@@ -467,11 +471,7 @@ a {
   width: 75%;
 }
 
-#contact-comments {
-  width: 100%;
-}
-
-#contact-button-section {
+.contact-button-section {
   height: 100px;
   background-color: lightgray;
   text-align: center;

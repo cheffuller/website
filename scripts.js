@@ -1,21 +1,37 @@
+(function () {
+  const copyrightInfo = document.querySelector(".copyright-info"),
+    newTextNode = document.createTextNode(
+      copyrightInfo.childNodes[0].nodeValue.replace(
+        "\u00a9 ",
+        "\u00A9 " + new Date().getFullYear() + " "
+      )
+    );
+
+  copyrightInfo.replaceChild(newTextNode, copyrightInfo.childNodes[0]);
+
+  console.log("Hello");
+})();
+
 // Scripts for contact page reults
-const placeForResults = document.getElementById("results")
+const placeForResults = document.getElementById("results");
 
 new URLSearchParams(window.location.search).forEach((value, name) => {
-  placeForResults.append(`${name} : ${value}`)
-  placeForResults.append(document.createElement("br"))
-})
+  placeForResults.append(`${name} : ${value}`);
+  placeForResults.append(document.createElement("br"));
+});
 
 // Scripts for nav menu
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 
 hamburger.addEventListener("click", () => {
-    hamburger.classList.toggle("active");
-    navMenu.classList.toggle("active");
-})
+  hamburger.classList.toggle("active");
+  navMenu.classList.toggle("active");
+});
 
-document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+document.querySelectorAll(".nav-link").forEach((n) =>
+  n.addEventListener("click", () => {
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
-}))
+  })
+);

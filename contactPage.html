@@ -7,7 +7,7 @@
     <title>Contact Brandon</title>
   </head>
 
-  <body id="contact-body">
+  <body class="contact-body">
     <header class="headerMain">
       <nav class="navbar">
         <a href="index.html" class="nav-branding">BF</a>
@@ -19,10 +19,10 @@
           <li class="nav-item">
             <a href="aboutPage.html" class="nav-link">About Me</a>
           </li>
-          <!-- <a class="nav" href="https://medium.com/me/stories/public">My Blog</a> -->
+          <!-- <a class="nav" href="https://medium.com/me/stories/public">My Blog</a> 
           <li class="nav-item">
             <a href="#" class="nav-link">My Blog</a>
-          </li>
+          </li> -->
           <li class="nav-item">
             <a href="contactPage.html" class="nav-link">Contact Me</a>
           </li>
@@ -34,11 +34,11 @@
         </div>
       </nav>
     </header>
-    <section id="contact-head">
-      <h1 id="contact-h1">I'm here, let's start a conversation...</h1>
+    <section class="contact-head">
+      <h1 class="contact-h1">I'm here, let's start a conversation...</h1>
     </section>
     <form action="results.html" method="GET" enctype="multipart/form-data">
-      <main id="contact-main">
+      <main class="contact-main">
         <section class="contact-section">
           <div class="contact-div">
             <label for="name">your name</label><br />
@@ -129,25 +129,14 @@
               <label for="noContact">no</label>
             </div>
           </div>
-
-          <div class="contact-div">
-            <label for="birthday">would you like me to send you birthday wishes?</label><br />
-            <input
-              type="date"
-              name="birthday"
-              id="birthday"
-              max="today"
-              class="contact-input"
-            />
-          </div>
         </section>
       </main>
-      <section id="contact-button-section">
+      <section class="contact-button-section">
         <button class="contact-buttons" type="reset">Reset</button>
         <button class="contact-buttons" type="submit">Submit</button>
       </section>
     </form>
-    <footer>© Brandon Fuller 2023</footer>
+    <footer class="copyright-info">&copy; Brandon Fuller</footer>
     <script src="scripts.js"></script>
   </body>
 </html>
