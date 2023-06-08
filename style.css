@@ -8,11 +8,11 @@
   box-sizing: border-box;
 }
 
-#bodyMain {
+.bodyMain {
   background-color: grey;
 }
 
-#indexMain {
+.indexMain {
   background-image: url(img/brandonDevilsRiver.JPG);
   background-size: cover;
   background-repeat: no-repeat;
@@ -21,7 +21,7 @@
   height: 700px;
 }
 
-#indexIntro {
+.indexIntro {
   width: 275px;
   margin: 100px 30% auto auto;
   font-family: "Architects Daughter", cursive;
@@ -34,7 +34,7 @@ article {
   margin: 0 20px;
 }
 
-#index-h1 {
+.index-h1 {
   font-family: "Rajdhani", sans-serif;
   margin: auto;
 }
@@ -141,13 +141,13 @@ li.nav-item {
     left: 0;
   }
 
-  #indexIntro {
+  .indexIntro {
     width: 275px;
     margin: 100px auto;
   }
 
-  #resumeHeader::before,
-  #resumeHeader {
+  .resumeHeader::before,
+  .resumeHeader {
     padding-top: 40px;
   }
 }
@@ -173,7 +173,7 @@ footer {
 
 /* css for the about html page */
 
-#about-main {
+.about-main {
   padding: 40px;
   display: flex;
   flex-wrap: wrap;
@@ -182,18 +182,18 @@ footer {
   font-size: 24px;
 }
 
-#about-main section, #about-main p, #about-main img {
+.about-main section, .about-main p, .about-main img {
   margin: auto;
 }
 
-#about-main section {
+.about-main section {
   display: flex;
   width: 400px;
   height: 450px;
   text-align: center;
 }
 
-#about-main img {
+.about-main img {
   width: 100%;
   padding: 50px;
 }
@@ -201,7 +201,7 @@ footer {
 /* re-ordering the sections of the About Me display grid on resizing to a single column */
 
 @media (max-width: 879px) {
-  #about-main section:nth-child(2) {
+  .about-main section:nth-child(2) {
     margin-top: 40px;
   }
 }
@@ -209,22 +209,22 @@ footer {
 /* re-ordering the sections of the About Me display grid on resizing to three columns */
 
 @media (min-width: 1280px) or (max-width: 879px) {
-  #about-main section:nth-child(1) {
+  .about-main section:nth-child(1) {
     order: 2;
   }
-  #about-main section:nth-child(2) {
+  .about-main section:nth-child(2) {
     order: 1;
   }
-  #about-main section:nth-child(3) {
+  .about-main section:nth-child(3) {
     order: 3;
   }
-  #about-main section:nth-child(4) {
+  .about-main section:nth-child(4) {
     order: 4;
   }
-  #about-main section:nth-child(5) {
+  .about-main section:nth-child(5) {
     order: 6;
   }
-  #about-main section:nth-child(6) {
+  .about-main section:nth-child(6) {
     order: 5;
   }
 }
@@ -237,13 +237,13 @@ footer {
   display: flex;
 }
 
-#resume-body {
+.resume-body {
   margin: 0 auto;
   max-width: 1000px;
 }
 
 /* Places a grey background for the header banner */
-#resumeHeader::before {
+.resumeHeader::before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -255,17 +255,16 @@ footer {
   opacity: 50%;
 }
 
-#resumeHeader {
-  width: 100%;
+.resumeHeader {
   position: relative;
 }
 
-#headarticle {
-  width: 100%;
+.headarticle {
+  width: 95%;
 }
 
 /* Positions and shapes the headshot image */
-#headshot {
+.resume-headshot {
   border-radius: 50%;
   width: 150px;
   margin: 0 auto;
@@ -274,7 +273,7 @@ footer {
   right: 50px;
 }
 
-#resumeH1 {
+.resumeH1 {
   font-size: 42px;
   font-weight: 400;
   letter-spacing: 15px;
@@ -282,13 +281,13 @@ footer {
   padding: 25px 38px 0px 38px;
 }
 
-#resumeH3 {
+.resumeH3 {
   font-weight: 600;
   letter-spacing: 10px;
   padding: 0 40px;
 }
 
-#resumeH2 {
+.resumeH2 {
   font-weight: 600;
   letter-spacing: 5px;
   padding-bottom: 20px;
@@ -396,8 +395,8 @@ a {
 
 /* increases size of gray banner for resume header */
 
-@media (max-width: 600px) {
-  #resumeHeader::before {
+@media (max-width: 615px) {
+  .resumeHeader::before {
     height: 200px;
   }
 }
