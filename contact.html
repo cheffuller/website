@@ -11,21 +11,19 @@
     <header class="headerMain">
       <nav class="navbar">
         <a href="index.html" class="nav-branding">BF</a>
-
         <ul class="nav-menu">
-          <li class="nav-item">
-            <a href="resume.html" class="nav-link">Resume</a>
-          </li>
-          <li class="nav-item">
-            <a href="aboutPage.html" class="nav-link">About Me</a>
-          </li>
-          <!-- <a class="nav" href="https://medium.com/me/stories/public">My Blog</a> 
-          <li class="nav-item">
-            <a href="#" class="nav-link">My Blog</a>
-          </li> -->
-          <li class="nav-item">
-            <a href="contactPage.html" class="nav-link">Contact Me</a>
-          </li>
+        <li class="nav-item">
+          <a href="resume.html" class="nav-link">Resume</a>
+        </li>
+        <li class="nav-item">
+          <a href="about.html" class="nav-link">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a href="portfolio.html" class="nav-link">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a href="contact.html" class="nav-link">Contact Me</a>
+        </li>
         </ul>
         <div class="hamburger">
           <span class="bar"></span>
@@ -37,7 +35,7 @@
     <section class="contact-head">
       <h1 class="contact-h1">I'm here, let's start a conversation...</h1>
     </section>
-    <form id="contact-form" method="post" enctype="text/plain">
+    <form id="contact-form" method="POST" action="https://getform.io/f/4ad0c037-b88e-42c8-a3f4-83d9d6187b78">
       <main class="contact-main">
         <section class="contact-section">
           <div class="contact-div">
@@ -64,7 +62,6 @@
             <textarea name="comments" id="contact-comments"> </textarea>
           </div>
         </section>
-
         <section class="contact-section">
           <div class="contact-div">
             how did you hear about me?
@@ -105,13 +102,12 @@
               <label for="acaRec">ACA recommendation</label>
             </div>
           </div>
-
           <div class="contact-div">
             would you like me to contact you back?
             <div class="inside-contact-div">
               <input
                 type="radio"
-                name="yesContact"
+                name="Contact"
                 id="yesContact"
                 value="yesContact"
                 class="contact-input"
@@ -121,7 +117,7 @@
             <div class="inside-contact-div">
               <input
                 type="radio"
-                name="noContact"
+                name="Contact"
                 id="noContact"
                 value="noContact"
                 class="contact-input"
@@ -132,8 +128,9 @@
         </section>
       </main>
       <section class="contact-button-section">
-        <button class="contact-buttons" type="reset">Reset</button>
-        <button class="contact-buttons" type="submit" onclick="sendform()" value="Send">Submit</button>
+        <input type="hidden" name="_gotcha" style="display:none !important">
+        <button class="contact-buttons" name="reset-button" type="reset">Reset</button>
+        <button class="contact-buttons" name="submit-button" type="submit" onclick="sendform()" value="Send">Submit</button>
       </section>
     </form>
     <footer class="copyright-info">&copy; Brandon Fuller</footer>
