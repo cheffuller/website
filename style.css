@@ -31,25 +31,35 @@ time, mark, audio, video {
 
 .bodyMain,
 .contact-body {
-  background-color: grey;
+  background-color: white;
 }
 
 .indexMain {
-  background-image: url(img/brandonDevilsRiver.JPG);
+  /* background-image: url(img/brandonDevilsRiver.JPG);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center; */
   display: flex;
   height: 700px;
+  justify-content: space-around;
+  border: 1px solid black;
 }
 
 .indexIntro {
-  width: 275px;
-  margin: 100px 30% auto auto;
+  margin: auto;
   font-family: "Architects Daughter", cursive;
   font-size: 24px;
   text-align: center;
-  color: white;
+  color: black;
+  /* border: 1px solid black; */
+  width: 50%;
+}
+
+.index-img {
+  text-align: left;
+  /* border: 1px solid black; */
+  margin: auto;
+  
 }
 
 article {
