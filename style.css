@@ -214,11 +214,6 @@ color: #e87d3e;
   .resumeHeader {
     padding-top: 40px;
   }
-
-  .port-img {
-    width: 100%;
-    height: auto;
-  }
 }
 
 .navbar {
@@ -488,14 +483,16 @@ a {
   display: grid;
   grid-template-columns: repeat(8, 12.5%);
   grid-template-rows: repeat(7, 100px);
-  border: 1px solid white;
+}
+
+.port-center {
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center;
 }
 
 .port-grid {
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  border: 1px solid white;
+  aspect-ratio: 1 / 1;
 }
 
 .port-grid.a {
