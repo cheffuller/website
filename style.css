@@ -511,6 +511,30 @@ background-position: center;
   transform: scale(1.3);
 }
 
+.port-img-1 {
+  border: 2px solid #6c99bb;
+}
+
+.port-img-2 {
+  border: 2px solid #e87d3e;
+}
+
+.port-img-3 {
+  border: 2px solid #e5b567;
+}
+
+.port-img-4 {
+  border: 2px solid #b05279;
+}
+
+.port-img-5 {
+  border: 2px solid #b4d273;
+}
+
+.port-img-6 {
+  border: 2px solid #9e86c8;
+}
+
 .port-top-left {
   grid-area: 2 / 3 / 3 / 4;
 }
