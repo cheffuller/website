@@ -522,11 +522,18 @@ background-position: center;
   border-radius: 5px;
   display: block;
   margin: auto;
-  transition: all .2s ease-in-out;
 }
 
-.port-img:hover {
-  transform: scale(1.2);
+.port-img,
+.port-single-img {
+  opacity: 0.8;
+  transition: all .3s ease-in-out;
+}
+
+.port-img:hover,
+.port-single-img:hover {
+  transform: scale(1.15);
+  opacity: 1;
 }
 
 .port-img-1 {
