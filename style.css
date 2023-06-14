@@ -1,22 +1,90 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat&family=Ubuntu&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700&display=swap");
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -42,12 +110,11 @@ a {
   flex-wrap: wrap;
   height: 600px;
   justify-content: center;
-
 }
 
 .index-intro {
   margin: auto;
-  font-family:  "Inconsolata", monaco, monospace;
+  font-family: "Inconsolata", monaco, monospace;
   font-weight: 200;
   font-size: 24px;
   text-align: center;
@@ -66,7 +133,7 @@ a {
 }
 
 .index-h1 {
-  font-family:  "Inconsolata", monaco, monospace;
+  font-family: "Inconsolata", monaco, monospace;
   font-weight: 500;
   margin: auto;
   padding: 10px 0;
@@ -223,7 +290,6 @@ li.nav-item {
     padding: 0;
     margin: 0;
   }
-
 }
 
 .navbar {
@@ -234,7 +300,6 @@ li.nav-item {
   display: flex;
   background-color: #3b3b3b;
 }
-
 
 .footer {
   width: 100%;
@@ -253,7 +318,8 @@ li.nav-item {
   display: flex;
   flex-wrap: wrap;
   font-family: "Inconsolata", monaco, monospace;
-  font-size: 24px;
+  font-size: 18px;
+  line-height: 1.5;;
   font-weight: 200;
   color: #d6d6d6;
 }
@@ -267,13 +333,13 @@ li.nav-item {
 .about-main section {
   display: flex;
   width: 400px;
-  height: 450px;
+  height: 250px;
   text-align: center;
 }
 
 .about-main img {
-  width: 100%;
-  padding: 50px;
+  width: 50%;
+  margin: auto;
 }
 
 /* re-ordering the sections of the About Me display grid on resizing to a single column */
@@ -504,9 +570,9 @@ a {
 }
 
 .port-center {
-background-size: contain;
-background-repeat: no-repeat;
-background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .port-grid {
@@ -524,15 +590,23 @@ background-position: center;
   margin: auto;
 }
 
+.port-img {
+  filter: grayscale(100%);
+}
+
 .port-img,
 .port-single-img {
   opacity: 0.8;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.port-img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.15);
 }
 
 .port-img:hover,
 .port-single-img:hover {
-  transform: scale(1.15);
   opacity: 1;
 }
 
@@ -622,27 +696,34 @@ pre {
 .contact-body,
 .contact-input,
 #contact-comments {
-  font-family: "Wix Madefor Display", sans-serif;
+  font-family: "Inconsolata", monaco, monospace;
+  color: #d6d6d6;
+  accent-color: #6c99bb;
+}
+
+.contact-input:focus,
+#contact-comments:focus {
+  outline: 1px solid #e87d3e;
 }
 
 .contact-h1 {
-  font-family: "Architects Daughter", cursive;
+  font-family: "Inconsolata", monaco, monospace;
   font-size: 36px;
   margin: auto;
   text-align: center;
-  color: white;
+  color: #d6d6d6;
+  padding: 0 50px;
 }
 
 .contact-main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  background-color: white;
+  background-color: #3b3b3b;
 }
 
 .contact-head {
   height: 200px;
-  background-color: lightgray;
   display: flex;
 }
 
@@ -669,12 +750,11 @@ pre {
 
 #contact-name,
 #contact-email,
-#contact-comments,
-#birthday {
+#contact-comments {
   box-sizing: border-box;
-  border: 2px solid #ccc;
-  border-radius: 4px;
-  background-color: #f8f8f8;
+  border: 1px solid #d6d6d6;
+  border-radius: 1px;
+  background-color: #2e2e2e;
   margin-top: 10px;
 }
 
@@ -685,7 +765,7 @@ pre {
 
 .contact-button-section {
   height: 100px;
-  background-color: lightgray;
+  background-color: #3b3b3b;
   text-align: center;
 }
 
