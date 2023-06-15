@@ -340,6 +340,7 @@ li.nav-item {
 .about-main img {
   width: 50%;
   margin: auto;
+  border-radius: 2px;
 }
 
 /* re-ordering the sections of the About Me display grid on resizing to a single column */
@@ -772,4 +773,7 @@ pre {
 .contact-buttons {
   padding: 5px;
   margin: 35px;
+  background-color: #2e2e2e;
+  color: #d6d6d6;
+  font-family: "Inconsolata", monaco, monospace;
 }
