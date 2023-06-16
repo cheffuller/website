@@ -712,7 +712,7 @@ pre {
   font-size: 36px;
   margin: auto;
   text-align: center;
-  color: #d6d6d6;
+  color: #6c99bb;
   padding: 0 50px;
 }
 
@@ -740,6 +740,26 @@ pre {
 .inside-contact-div {
   margin: 10px 20px;
   line-height: 1.5;
+}
+
+label[for=contact-name] {
+  color:#e87d3e;
+}
+
+label[for=contact-email] {
+  color:#9e86c8;
+}
+
+label[for=contact-comments] {
+  color:#b05279;
+}
+
+.checkboxes {
+  color:#e5b567;
+}
+
+.rad-buttons {
+  color:#b4d273;
 }
 
 #contact-comments {
@@ -774,6 +794,6 @@ pre {
   padding: 5px;
   margin: 35px;
   background-color: #2e2e2e;
-  color: #d6d6d6;
+  color: #6c99bb;
   font-family: "Inconsolata", monaco, monospace;
 }
